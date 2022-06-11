@@ -39,7 +39,7 @@
     debug "^3.1.0"
     lodash.once "^4.1.1"
 
-"@faker-js/faker@^7.2.0":
+"@faker-js/faker@^7.1.0":
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/@faker-js/faker/-/faker-7.2.0.tgz#c5fe4c34f3a3664ac64fe1a21bac2004ea5faa22"
   integrity sha512-dzjQ0LFT+bPLWg0yyV3MpxaLJp/+VW4a0SnjNSWJ4YpJ928LXDOZAN+kB2/JPPisI3Ra0w2BxbD4M9J7o0jcpw==
@@ -471,6 +471,11 @@ extsprintf@^1.2.0:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.4.1.tgz#8d172c064867f235c0c84a596806d279bf4bcc07"
   integrity sha512-Wrk35e8ydCKDj/ArClo1VrPVmN8zph5V4AtHwIuHhvMXsKf73UT3BOD+azBIW+3wOJ4FhEH7zyaJCFvChjYvMA==
+
+faker@^5.5.3:
+  version "5.5.3"
+  resolved "https://registry.yarnpkg.com/faker/-/faker-5.5.3.tgz#c57974ee484431b25205c2c8dc09fda861e51e0e"
+  integrity sha512-wLTv2a28wjUyWkbnX7u/ABZBkUkIF2fCd73V6P2oFqEGEktDfzWx4UxrSqtPRw0xPRAcjeAOIiJWqZm3pP4u3g==
 
 fd-slicer@~1.1.0:
   version "1.1.0"

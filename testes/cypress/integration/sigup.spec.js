@@ -1,7 +1,7 @@
 //necessário importar até o caminho até a pasta do arquivo
 import signup from '../support/pages/signup'
 import signupFactory from "../factories/signupFactory"
-
+import  homePage from "../support/pages/home"
 
 describe('signup', () => {
 
@@ -12,6 +12,15 @@ describe('signup', () => {
         
         signup.fillForm(user)
         signup.submit()
+
+        
+    });
+
+
+    it('Fazer login', () => {
+        
+        homePage.go()
+        homePage.fillLgin()
     });
     
 });

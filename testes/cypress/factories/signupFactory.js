@@ -9,9 +9,9 @@ export default {
 
         //Instanciando e retornando a variavel
         let data = {
-            name: '${firstName} ${lastName}',
+            name: `${firstName} ${lastName}`,
             email: faker.internet.email(firstName),
-            password: '123'
+            password: '1238548'
         }
         return data
 

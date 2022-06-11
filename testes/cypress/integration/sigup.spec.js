@@ -8,7 +8,9 @@ describe('signup', () => {
     it('Fazer cadastro', () => {
         
         signup.go()
-        signup.fillForm()
+        let user = signupFactory.user()
+        
+        signup.fillForm(user)
         signup.submit()
     });
     

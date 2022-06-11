@@ -16,14 +16,18 @@ class signupPage {
     //Função para preencher o formulario.
     fillForm(user) {
         cy.get('input[placeholder="Nome"]').type(user.name);
-        cy.get('input[placeholder="Nome"]').type(user.email);
-        cy.get('input[placeholder="Nome"]').type(user.password);
-    }
+        cy.get('[placeholder="E-mail"]').type(user.email);
+        cy.get('[placeholder="Senha"]').type(user.password);
 
+
+
+    }
+    //[class="sc-AxirZ bJCmFu"]
 
     //Função para submeter o formulario.
     submit() {
-        cy.get('submit').click()
+        cy.get('[class="sc-AxgMl bWbWap"]').click()
+        //cy.get(elSignup.validaMenssagemCadastro).should('have.text', 'Agora você pode fazer seu login no Samurai Barbershop!');
 
 
     }

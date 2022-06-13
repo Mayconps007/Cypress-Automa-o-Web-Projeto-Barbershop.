@@ -18,18 +18,20 @@ class signupPage {
         cy.get('input[placeholder="Nome"]').type(user.name);
         cy.get('[placeholder="E-mail"]').type(user.email);
         cy.get('[placeholder="Senha"]').type(user.password);
-
-
-
     }
-    //[class="sc-AxirZ bJCmFu"]
+
 
     //Função para submeter o formulario.
     submit() {
         cy.get('[class="sc-AxgMl bWbWap"]').click()
-        //cy.get(elSignup.validaMenssagemCadastro).should('have.text', 'Agora você pode fazer seu login no Samurai Barbershop!');
+        //cy.get(elSignup.assertsPopup).should('have.text', 'Agora você pode fazer seu login no Samurai Barbershop!');
+    }
 
-
+    toastAlert(menssageExpected){
+        cy.get('.toast')
+        .should('be.visible')
+        .find('p')
+        .should('have.text',menssageExpected);
     }
 }
 
